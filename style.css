@@ -1,0 +1,116 @@
+
+/* Center the form container */
+.container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;       /* full viewport height */
+    background-color: white;
+    background-image: url('https://bbsbec.edu.in/wp-content/uploads/2016/12/bbsbec4-1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;/* optional background */
+}
+
+/* Center all fields inside the card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers children horizontally */
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #7313c847;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;         /* limits form width */
+}
+.card h1{
+    color: #b61515;
+}
+
+/* Make each field row centered */
+.field-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Center the label and input */
+.field-row label {
+    text-align: center;  /* center the label text */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.field-row input,
+.field-row select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center; /* center the input text */
+    width: 100%;
+}
+/* Center the grid containing batch and branch */
+.field-row2 {
+    display: flex;
+    justify-content: center;  /* centers both dropdowns horizontally */
+    gap: 20px;                /* space between batch and branch */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Optional: make dropdowns equal width and centered text */
+.grid-2 select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;   /* centers selected text inside dropdown */
+    min-width: 120px;     /* optional: set minimum width */
+}
+
+
+/* Center the submit button */
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #2ab615;
+    border-radius: 10%;
+    color: red;
+}
+.grid-2 select:hover {
+    background-color: #b61515;}
+
+.title{
+  margin:0 0 1rem 0;
+  font-size:1.4rem;
+  color:rgb(0, 128, 60);
+}
+h1{
+    text-align: center;}
+    
+
+@media (max-width:640px){
+  .grid-2{grid-template-columns:1fr}
+  .card{padding:1rem}
+}
+
+/* Simple entrance animation */
+@keyframes floatIn{
+  from{opacity:0;transform:translateY(12px) scale(.995)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
